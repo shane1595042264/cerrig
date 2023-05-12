@@ -1,18 +1,26 @@
 import React from 'react';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import Footer from './components/Footer';
+import Home from './pages/HomePage';
+import About from './pages/AboutPage';
+import Services from './pages/ServicesPage';
+import Contact from './pages/ContactPage';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      {/* Add your main content here */}
-      <main>
-        <h1>Welcome to My Website</h1>
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div className="bg-gradient-to-r from-green-400 to-blue-500 min-h-screen">
+        <Header />
+        <main className="container mx-auto mt-10">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
+      </div>
+    </Router>
   );
 }
 
