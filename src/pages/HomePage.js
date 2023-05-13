@@ -3,16 +3,16 @@ import React from 'react';
 const HomePage = () => {
   return (
     <div>
-      <div className="relative h-screen overflow-hidden">
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
-          <video
-            className="absolute top-0 left-0 w-auto h-full min-w-full min-h-full object-cover"
-            src="/1.mp4"
-            type="video/mp4"
-            autoPlay
-            loop
-            muted
-          />
+      <div className="relative h-screen">
+      <div className="absolute inset-0 overflow-hidden">
+        <video
+          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full w-auto h-auto object-cover z-[-1]"
+          src="/1.mp4"
+          type="video/mp4"
+          autoPlay
+          loop
+          muted
+        />
         </div>
 
         <div className="absolute inset-0 z-10 pt-20">
@@ -27,7 +27,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <div className="z-10 pt-20">
+      <div className="z-10 pt-20 flex-grow">
         <div className="mx-auto py-16 px-6">
           {/* Services */}
           <section className="space-y-12">

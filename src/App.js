@@ -9,7 +9,7 @@ import Contact from './pages/ContactPage';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen relative full-viewport-height"> {/* Add 'overflow-hidden' class here */}
+      <div className="min-h-screen relative"> {/* Removed 'full-viewport-height' */}
         <Header />
         <main className="container mx-auto mt-10">
           <Routes>

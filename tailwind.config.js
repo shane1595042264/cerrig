@@ -14,6 +14,9 @@ module.exports = {
         'rose-gold': '#B76E79',
         'magenta-red': '#FF3366',
       },
+      zIndex: {
+        '-1': '-1',
+      },
     },
   },
   variants: {
