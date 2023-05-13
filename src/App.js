@@ -9,7 +9,7 @@ import Contact from './pages/ContactPage';
 function App() {
   return (
     <Router>
-      <div className="bg-gradient-to-r from-green-400 to-blue-500 min-h-screen">
+      <div className="min-h-screen relative full-viewport-height"> {/* Add 'overflow-hidden' class here */}
         <Header />
         <main className="container mx-auto mt-10">
           <Routes>
