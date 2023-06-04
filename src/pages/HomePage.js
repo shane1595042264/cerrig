@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { LanguageContext } from '../App';
+import translations from './translations';
 import { useNavigate } from 'react-router-dom';
 
 const HomePage = () => {
+  const { language } = useContext(LanguageContext);
   const navigate = useNavigate();
+  const { mainHeading } = translations[language].homePage;
 
   return (
     <div>
@@ -22,15 +26,13 @@ const HomePage = () => {
           <div className="mx-auto py-16 px-6">
             {/* Main heading */}
             <div className="text-center mb-16">
-              <h1 className="text-4xl font-bold text-white">Invest in Mexico with Confidence</h1>
-              <p className="mt-4 text-lg text-gray-300">
-                Our mission is to help Chinese investors navigate the complexities of setting up operations in Mexico.
-              </p>
+              <h1 className="text-4xl font-bold text-white">{mainHeading.title}</h1>
+              <p className="mt-4 text-lg text-gray-300">{mainHeading.description}</p>
               <button 
                 className="mt-8 px-8 py-4 border-2 border-white text-white text-2xl rounded-lg transition duration-500 ease-in-out hover:bg-white hover:text-blue-700"
                 onClick={() => navigate('/about')}
               >
-                Learn More
+                {mainHeading.learnMoreButton}
               </button>
             </div>
           </div>
