@@ -1,5 +1,8 @@
 import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
+import img1 from '../images/0322- For Use/IMG_0441.JPEG'
+import Header from '../components/Header';
+import park from "../images/0322- For Use/park.MP4"
 
 const ServicesPage = () => {
   return (
@@ -9,14 +12,24 @@ const ServicesPage = () => {
       render={({ state, fullpageApi }) => {
         return (
           <ReactFullpage.Wrapper>
-            <div className="section h-screen flex flex-col justify-center items-center text-white">
+            <Header />
+            <div className="section h-screen flex flex-col justify-center items-center text-white" style={{ backgroundImage: `url(${img1})`, backgroundSize: 'cover', backgroundPosition: 'center'
+          ,paddingTop: '60px'  }}>
               <h1 className="text-4xl font-bold">Our Services</h1>
               <p className="mt-4 text-lg">
                 We provide top-notch consulting services to help you navigate the complexities of setting up operations in Mexico.
               </p>
             </div>
 
-            <div className="section h-screen flex flex-col justify-center items-center text-white">
+            <div className="section h-screen relative">
+            <video
+    autoPlay
+    loop
+    muted
+    src= "/park.MP4"// Replace with your video file path
+    className="absolute z-10 w-full h-full object-cover"
+  />
+  <div className="absolute inset-0 flex flex-col justify-center items-center text-white z-20">
               <h2 className="text-2xl font-bold">Featured Case Study</h2>
               <p className="mt-4 text-lg">
                 Here's how we helped a client successfully establish their business in Mexico.
@@ -24,6 +37,7 @@ const ServicesPage = () => {
               <button className="mt-8 px-8 py-4 bg-white bg-opacity-50 text-blue-700 text-2xl rounded-lg transition duration-500 ease-in-out hover:bg-opacity-100">
                 Learn More
               </button>
+              </div>
             </div>
 
             <div className="section h-screen flex flex-col justify-center items-center text-white">

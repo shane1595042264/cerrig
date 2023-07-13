@@ -14,7 +14,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-transparent w-full p-4 fixed inset-x-0 top-0 z-20"> 
+    <header className="bg-transparent w-full p-4 absolute inset-x-0 top-0 z-20"> 
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white cursor-pointer" onClick={handleLogoClick}>
           MyLogo

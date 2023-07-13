@@ -22,7 +22,7 @@ function App() {
       <Router>
         <div className="min-h-screen relative">
           <Header />
-          <main className="container mx-auto mt-10">
+          <main className="container mx-auto">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
