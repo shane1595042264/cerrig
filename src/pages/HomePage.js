@@ -30,7 +30,7 @@ const HomePage = () => {
               <p className="mt-4 text-lg text-gray-300">{mainHeading.description}</p>
               <button 
                 className="mt-8 px-8 py-4 border-2 border-white text-white text-2xl rounded-lg transition duration-500 ease-in-out hover:bg-white hover:text-blue-700"
-                onClick={() => navigate('/about')}
+                onClick={() => navigate('/services')}
               >
                 {mainHeading.learnMoreButton}
               </button>
