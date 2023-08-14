@@ -6,7 +6,7 @@ const CaseStudies = () => {
     {
       name: "HYS Medical",
       logo: "https://0.rc.xiniu.com/g2/M00/26/0B/CgAGe1yiKk2APz-DAABkDlb44O0747.png", // Replace with actual URL of logo
-      content: "协助HYS Medical公司在Saltillo找到厂房及合适的当地行政顾问公司，目前厂房已找到，机器已到位，预计2023年8月底试产。",
+      content: "协助HYS Medical公司在Saltillo考察厂房及合适的当地行政顾问公司，目前已租到厂房，机器已到位，预计2023年8月底试产。",
       link: "http://www.hysmedical.com/"
     },
     {
@@ -18,7 +18,7 @@ const CaseStudies = () => {
     {
       name: "南京聚龙",
       logo: nanjingjulong, // Replace with actual URL of logo
-      content: "协助南京聚龙考察墨西哥工业厂房、工业用地。",
+      content: "协助南京聚龙考察墨西哥工业厂房、工业用地。目前已租到厂房。",
       link: "http://www.njjulong.cn/upload/201706/1496811111.png"
     }
   ];

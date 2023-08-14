@@ -40,42 +40,57 @@ const ServicesPage = () => {
       </div>
       
       <Element name="services" className="element snap-start ">
-    <div className="section h-screen flex flex-col justify-center items-center text-white" style={{ backgroundImage: `url(${img1})`, backgroundSize: 'cover', backgroundPosition: 'center', paddingTop: '60px' }}>
-        <h1 className="text-4xl font-bold">我们的服务</h1>
-        <p className="mt-4 text-lg">
+        <div className="section  h-screen flex flex-col justify-center items-center text-white" style={{ backgroundImage: `url(${img1})`, backgroundSize: 'cover', backgroundPosition: 'center', paddingTop: '60px' }}>
+          <h1 className="text-4xl font-bold">我们的服务</h1>
+          <p className="mt-4 text-lg">
             我们提供一流的咨询服务，帮助您应对在墨西哥设立运营的复杂性。
-        </p>
-        <div className="grid grid-cols-2 gap-8 mt-8">
-            <div className="p-6">
-                <h3 className="text-xl font-bold mb-4">可行性分析</h3>
-                <ul className="list-disc list-inside space-y-2">
-                    <li>厂房选址</li>
-                    <li>墨西哥制造的实际综合成本分析，包括税收、人工、水电、原料、物流等成本</li>
-                    <li>了解当地庇护服务公司的服务内容、如何选择</li>
-                </ul>
-            </div>
-            <div className="p-6">
-                <h3 className="text-xl font-bold mb-4">客户软着陆</h3>
-                <ul className="list-disc list-inside space-y-2">
-                    <li>帮助投资者了解墨西哥当地法律法规及跟中墨两国的文化差异，让中国团队尽快适应并融入当地团队</li>
-                    <li>如何建立并培训当地团队</li>
-                </ul>
-            </div>
-            <div className="animate-gradient-x bg-gradient-linear from-black-400 via-red-500 to-pink-500 p-4 rounded-lg">
-                <h3 className="text-xl font-bold">供应链集成</h3>
-                <p>简化您的工厂流程到现有供应链的集成，确保材料的高效采购和产品的分发。</p>
-            </div>
-            <div className="animate-gradient-x bg-gradient-linear from-black-400 via-red-500 to-pink-500 p-4 rounded-lg">
-                <h3 className="text-xl font-bold">国际管理团队的培训和发展</h3>
-                <p>跨国管理的有效沟通、项目管理方法运用等。</p>
-            </div>
+          </p>
+          <div className="grid grid-cols-2 gap-4 mt-8">
+  <div className="animate-gradient-x bg-gradient-linear from-black-400 via-red-500 to-pink-500 p-4 rounded-lg text-white">
+    <h3 className="text-xl font-bold">法规合规性</h3>
+    <p>导航墨西哥的法规环境，确保您的运营符合所有的地方、州和联邦规定。</p>
+  </div>
+  <div className="animate-gradient-x bg-gradient-linear from-black-400 via-red-500 to-pink-500 p-4 rounded-lg text-white">
+    <h3 className="text-xl font-bold">现场定位服务</h3>
+    <p>根据您的工厂需求、供应链要求和劳动力可用性，识别和确保最佳的现场位置。</p>
+  </div>
+  <div className="animate-gradient-x bg-gradient-linear from-black-400 via-red-500 to-pink-500 p-4 rounded-lg text-white">
+    <h3 className="text-xl font-bold">供应链集成</h3>
+    <p>简化您的工厂到现有供应链的集成，确保材料的高效采购和产品的分发。</p>
+  </div>
+  <div className="animate-gradient-x bg-gradient-linear from-black-400 via-red-500 to-pink-500 p-4 rounded-lg text-white">
+    <h3 className="text-xl font-bold">劳动力培训和发展</h3>
+    <p>实施培训计划，为当地劳动力配备必要的技能，并为劳动力的保留和增长制定策略。</p>
+  </div>
+</div>
+
         </div>
-    </div>
+      
 </Element>
 
+<Element name="feasibilityAnalysis" className="element snap-start">
+  <div className="section h-screen flex flex-col justify-center items-center text-white">
+    <h2 className="text-2xl font-bold mb-4">一、投资墨西哥的可行性分析</h2>
+    <div className="animate-gradient-x bg-gradient-linear from-black-400 via-red-500 to-pink-500 p-4 rounded-lg text-white">
+      <p>• 厂房选址</p>
+      <p>• 墨西哥制造的实际综合成本分析，包括税收、人工、水电、原料、物流等成本</p>
+      <p>• 供应链的分析</p>
+      <p>• 了解当地庇护服务公司的服务内容、如何选择</p>
+    </div>
+  </div>
+</Element>
 
-
-
+<Element name="softLanding" className="element snap-start">
+  <div className="section h-screen flex flex-col justify-center items-center text-white">
+    <h2 className="text-2xl font-bold mb-4">二、帮助客户软着陆</h2>
+    <div className="animate-gradient-x bg-gradient-linear from-black-400 via-red-500 to-pink-500 p-4 rounded-lg text-white">
+      <p>• 帮助投资者了解墨西哥当地法律法规及跟中墨两国的文化差异，让中国团队尽快适应并融入当地团队</p>
+      <p>• 如何建立并培训当地团队</p>
+      <p>• 培训国际管理团队</p>
+    </div>
+  </div>
+</Element>
+</Element>
 
       <Element name="caseStudy" className="element snap-start">
         <div className="section scroll-behavior[smooth] h-screen relative">
