@@ -25,6 +25,7 @@ module.exports = {
           },
         },
       },
+      'scroll-behavior': ['smooth'],
       backgroundImage: {
         'gradient-radial': 'radial-gradient(ellipse at center, var(--tw-gradient-stops))',
         'gradient-linear': 'linear-gradient(to right, var(--tw-gradient-stops))',

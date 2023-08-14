@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { LanguageContext } from '../App';
 import translations from '../pages/translations';
+import CerrigLogo from "../images/Logos/cerrig.png"
 
 const Header = () => {
   const navigate = useNavigate();
@@ -17,7 +18,7 @@ const Header = () => {
     <header className="bg-transparent w-full p-4 absolute inset-x-0 top-0 z-20"> 
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white cursor-pointer" onClick={handleLogoClick}>
-          MyLogo
+        <img src={CerrigLogo} alt="MyLogo" />
         </div>
         <nav>
           <ul className="flex space-x-4">

@@ -11,6 +11,7 @@ import WhatWeCanDoForYou from './pages/WhatWeCanDo';
 import OurTeam from './pages/OurTeam';
 import SuggestFromCerrig from './pages/SuggestFromCerrig';
 import Footer from './components/Footer';
+import CaseStudies from './pages/CaseStudies';
 
 export const LanguageContext = createContext();
 
@@ -33,6 +34,7 @@ function App() {
               <Route path="/what-we-can-do-for-you" element={<WhatWeCanDoForYou />} />
               <Route path="/our-team" element={<OurTeam />} />
               <Route path="/suggest-from-cerrig" element={<SuggestFromCerrig />} />
+              <Route path="/case_studies" element={<CaseStudies />} />
             </Routes>
           </main>
           <Footer />
