@@ -1,7 +1,8 @@
 import React from 'react';
 import nanjingjulong from "../images/Logos/njjulong.png";
-
+import { useNavigate } from 'react-router-dom';
 const CaseStudies = () => {
+  const navigate = useNavigate(); 
   const cases = [
     {
       name: "HYS Medical",
@@ -26,6 +27,9 @@ const CaseStudies = () => {
   return (
     <div className="flex flex-col items-center space-y-8">
       <h1 className="text-4xl font-bold text-white">经典案例分享</h1>
+      <button 
+      onClick={() => navigate('/gallery')} 
+      className="mt-4 text-white bg-blue-500 hover:bg-blue-600 rounded px-4 py-2 transition duration-300 ease-in-out">参观相册</button>
       {cases.map((study, index) => (
         <div key={index} className="p-4 max-w-2xl w-full bg-white shadow-md rounded-lg flex items-start space-x-4">
           <img src={study.logo} alt={study.name} className="w-32 h-32 object-contain rounded-full"/>

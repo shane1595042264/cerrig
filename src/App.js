@@ -12,6 +12,7 @@ import OurTeam from './pages/OurTeam';
 import SuggestFromCerrig from './pages/SuggestFromCerrig';
 import Footer from './components/Footer';
 import CaseStudies from './pages/CaseStudies';
+import Gallery from './pages/Gallery';
 
 export const LanguageContext = createContext();
 
@@ -35,6 +36,7 @@ function App() {
               <Route path="/our-team" element={<OurTeam />} />
               <Route path="/suggest-from-cerrig" element={<SuggestFromCerrig />} />
               <Route path="/case_studies" element={<CaseStudies />} />
+              <Route path="/gallery" element={<Gallery />} />
             </Routes>
           </main>
           <Footer />

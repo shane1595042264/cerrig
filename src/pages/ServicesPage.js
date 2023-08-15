@@ -1,14 +1,13 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { Link, Element, Container } from 'react-scroll';
-import img1 from '../images/0322- For Use/groupo.JPEG';
+
 import Header from '../components/Header';
-import park from "../images/0322- For Use/park.MP4";
-import teamBackground from "../images/character/group1.JPEG";
 import { useNavigate } from 'react-router-dom';
 import nanjingjulong from "../images/Logos/njjulong.png";
 import { LanguageContext } from '../App';
 import translations from './translations';
-
+var teamBackground = "/character/group1.JPEG"
+var img1 = "/0322- For Use/groupo.JPEG"
 const ServicesPage = () => {
   const { language } = useContext(LanguageContext);
 
@@ -17,9 +16,7 @@ const ServicesPage = () => {
   useEffect(() => {
     setHasMounted(true);
   }, []);
-  if (!hasMounted) {
-    return null;
-  }
+  console.log(img1);
   return (
     <div >
       <Header />
@@ -40,7 +37,7 @@ const ServicesPage = () => {
       </div>
       
       <Element name="services" className="element snap-start ">
-    <div className="section h-screen flex flex-col justify-center items-center text-white" style={{ backgroundImage: `url(${img1})`, backgroundSize: 'cover', backgroundPosition: 'center', paddingTop: '60px' }}>
+    <div className="section h-screen flex flex-col justify-center items-center text-white" style={{ backgroundImage: `url('/0322- For Use/groupo.JPEG')`, backgroundSize: 'cover', backgroundPosition: 'center', paddingTop: '60px' }}>
         <h1 className="text-4xl font-bold">我们的服务</h1>
         <p className="mt-4 text-lg">
             我们提供一流的咨询服务，帮助您应对在墨西哥设立运营的复杂性。
